@@ -19,5 +19,7 @@ acbuild --debug set-working-directory /usr/share/nginx/html
 acbuild --debug set-exec -- /usr/sbin/nginx -g "daemon off;"
 acbuild --debug write hello-world.aci
 
+acbuild --debug end
+
 # Run this afterwards
 #sudo rkt run --insecure-options=image ./hello-world.aci --volume html,kind=host,source=/home/mharz_buella/hello-world/html --net=host
